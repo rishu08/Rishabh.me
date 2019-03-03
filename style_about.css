@@ -4,14 +4,14 @@ body {
     background-repeat: no-repeat;
     margin: 5; padding: 5; border: 0;
     color: black;
-    background-color:darkseagreen;
+    background-color:beige;
     font: 16px Helvetica, Arial, Sans-Serif; color: #636363; line-height: 24px;
 }
 
 #header {
-	width: 100%; margin:auto;
-/*    background-repeat:round;*/
-    background-image: url("./images/bg4.jpg");
+	width: 100%; 
+    margin:auto;
+ /*    background-image: url("./images/N.jpg");*/
 }
 
 h1,h2{
@@ -32,13 +32,16 @@ h1,h2{
 /*        margin: -134px auto 25px auto;*/
 }
 	ul#nav li {
-		width: 25%; height: 33px; float: left; 
+		width: 25%;
+/*        height: 33px;*/
+        float: left; 
 /*        padding: 13px 0 0 120px;*/
         font-weight: bold; text-align: center; text-transform: uppercase;
     }
 
     ul#nav li a {
-        color: black; text-decoration: none;
+        color: black; 
+        text-decoration: none;
         }
     ul#nav li a:hover {
         color: #a12121;
@@ -71,6 +74,7 @@ h1,h2{
 .pic{
     display: flex;
     justify-content: center;
+    line-height: normal;
     flex-grow: 0;
     width: 342.9px;
     align-self: center;
@@ -79,7 +83,7 @@ h1,h2{
 }
 
 .content{
-    background-color: white;
+    background-color:floralwhite;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -97,9 +101,9 @@ h1,h2{
 
 .process{
    position: relative;
-    width: 30%;
-    background-color: black;
-    height: 10px;
+    width: 40%;
+    background-color: gainsboro;
+    height: 5px;
     display: inline-block;
     border-left: 0.5px solid black;
     
@@ -108,15 +112,15 @@ h1,h2{
 
 .lang{
     position: absolute;
-    height: 10px;
+    height: 5px;
     width: 70%;
     animation:load 1s 1;
     background-color: blueviolet;
 /*    border: 2px solid blueviolet;*/
     border-left: .5px solid blueviolet;
-    border-radius: 25px;
-    
+    border-radius: 25px;    
 }
+
 @keyframes load{
     0%{
         transform: scale(0);
@@ -187,7 +191,7 @@ h1,h2{
 {
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: floralwhite;
     justify-content: center;
 /*    height: 200px;*/
     padding: 2%;
@@ -213,4 +217,21 @@ h1,h2{
 {
     display: inline-block;
     width:60px;
+    color: black;
+}
+
+.skill_level{
+    position: absolute;
+    top: -12px;
+    left: 100%;
+    margin-left: -28px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 28px;
+    line-height: 22px;
+    padding: 0;
+    border: 2px solid #345;
+    border-radius: 8px;
+    background: #fff;
 }
